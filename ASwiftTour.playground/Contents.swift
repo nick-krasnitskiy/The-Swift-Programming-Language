@@ -431,3 +431,7 @@ struct Card {
 
 let threeOdSpades = Card(rank: .three, suit: .spades)
 let threeOfSpadesDescription = threeOdSpades.simpleDescription()
+
+// Concurrency
+
+
