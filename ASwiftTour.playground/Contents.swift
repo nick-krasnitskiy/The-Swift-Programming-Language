@@ -434,4 +434,10 @@ let threeOfSpadesDescription = threeOdSpades.simpleDescription()
 
 // Concurrency
 
+func fetchUserID(from server: String) async -> Int {
+    if server == "primaty" {
+        return 97
+    }
+    return 501
+}
 
