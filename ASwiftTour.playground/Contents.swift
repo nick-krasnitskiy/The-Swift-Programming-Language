@@ -489,3 +489,55 @@ actor ServerCoonection {
 
 let server = ServerCoonection()
 let userID = await server.connect()
+
+// Protocols and Extensions
+
+protocol ExampleProtocol {
+    var simpleDescription: String { get }
+    mutating func adjust()
+}
+
+class SimleClass: ExampleProtocol {
+    var simpleDescription: String = "A very simple class."
+    var anotherProperty: Int = 69105
+    
+    func adjust() {
+        simpleDescription += " Now adjusted."
+    }
+}
+
+var a = SimleClass()
+a.adjust()
+let aDescription = a.simpleDescription
+
+struct SimpleStructure: ExampleProtocol {
+    var simpleDescription: String = "A simple structure."
+    
+    mutating func adjust() {
+        simpleDescription += " (adjusted)"
+    }
+}
+
+
+var b = SimpleStructure()
+b.adjust()
+let bDescription = b.simpleDescription
+
+
+extension Int: ExampleProtocol {
+    var simpleDescription: String {
+        return "The number \(self)"
+    }
+    mutating func adjust() {
+        self += 42
+    }
+}
+
+print(7.simpleDescription)
+// Prints "The number 7"
+
+let protocolValue: any ExampleProtocol = a
+print(protocolValue.simpleDescription)
+// Prints "A very simple class.  Now 100% adjusted."
+// print(protocolValue.anotherProperty)  // Uncomment to see the error
+
