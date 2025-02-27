@@ -38,3 +38,11 @@ let 🐶🐮 = "dogcow"
 var friendlyWelcome = "Hello!"
 friendlyWelcome = "Bonjour!"
 // friendlyWelcome is now "Bonjour!"
+
+// Printing Constants and Variables
+
+print(friendlyWelcome)
+// Prints "Bonjour!"
+
+print("The current value of friendlyWelcome is \(friendlyWelcome)")
+// Prints "The current value of friendlyWelcome is Bonjour!"
