@@ -46,3 +46,15 @@ print(friendlyWelcome)
 
 print("The current value of friendlyWelcome is \(friendlyWelcome)")
 // Prints "The current value of friendlyWelcome is Bonjour!"
+
+// Comments
+
+// This is a commemt.
+
+/* This is also a comment
+but is written over multiple lines.*/
+
+/* This is the start of the first multiline comment.
+ /* This is the second multiline comment. */
+ This is the end of the first multiline comment.
+ */
