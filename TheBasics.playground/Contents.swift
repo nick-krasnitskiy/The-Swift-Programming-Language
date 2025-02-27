@@ -58,3 +58,8 @@ but is written over multiple lines.*/
  /* This is the second multiline comment. */
  This is the end of the first multiline comment.
  */
+
+// Semicolons
+
+let cat = "🐱"; print(cat)
+// Prints "🐱"
