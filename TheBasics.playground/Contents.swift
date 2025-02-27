@@ -29,3 +29,12 @@ welcomeMessage =  "Hello"
 
 var red, green, blue: Double
 
+// Naming Constants and Variables
+
+let π = 3.1459
+let 你好 = "你好世界"
+let 🐶🐮 = "dogcow"
+
+var friendlyWelcome = "Hello!"
+friendlyWelcome = "Bonjour!"
+// friendlyWelcome is now "Bonjour!"
