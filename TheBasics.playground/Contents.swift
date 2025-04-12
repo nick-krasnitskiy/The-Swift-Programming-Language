@@ -80,5 +80,7 @@ let pi = 3.14159
 let anotherPi = 3 + 0.14159
 // anotherPi is also inferred to be of type Double
 
-
+// Tuples
+let http404Error = (404, "Not Found")
+// http404Error is of type (Int, String), and equals (404, "Not Found")
 
